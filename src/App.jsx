@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './components/Header'
 import Banner from './components/Banner'
 import Courses from './components/Courses'
+import StaffSwiper from './components/StaffSwiper'
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
    </div>
    <div id="courses">
    <Courses/>
-
+    <StaffSwiper/>
    </div>
    </>
   )

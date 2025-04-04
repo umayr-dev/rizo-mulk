@@ -1,81 +1,209 @@
+/* Layout */
 .header {
-    width: 100%;
-    height: 80px;
-    padding: 0 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background-color: #056937;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    padding: 10px 50px;
+    background-color: #056937;
     z-index: 100;
-    box-shadow: 0px 4px 10px rgba(167, 162, 162, 0.1);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
   }
   
   .header-logo {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 0 20px;
   }
   
-  .header-logo h1 {
-    font-size: 18px;
-    color: white;
-    margin: 0;
-  }
-  .header-logo span{
-    font-size: 14px;
+  .header-logo span {
+    display: flex;
+    flex-direction: column;
   }
   
-  .header-nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: color 0.3s;
-  }
-  
-  .header-nav a:hover {
-    color: #0056b3;
+  .header-nav {
+    display: flex;
+    gap: 25px;
   }
   
   .header-lang {
-    display: flex;
-    align-items: center;
-    margin-right: 30px;
+    margin-left: 20px;
   }
   
   .lang-select {
-    padding: 8px 12px;
-    border: 2px solid white;
-    border-radius: 6px;
-    background: #056937;
-    color: white;
-    font-size: 16px;
+    padding: 4px 10px;
+  }
+  
+  /* === Desktop NAV hover dropdown === */
+  .nav-item {
+    position: relative;
+  }
+  
+  .nav-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100px;
+    height: 0;
+    overflow: hidden;
+    background: #fff;
+    transition: all 0.3s ease;
+    z-index: 100;
+  }
+  
+  .nav-item:hover .nav-dropdown {
+    height: 100px;
+  }
+  
+  .dropdown-content {
+    background-color: #056937;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    transition:  all 0.4s ease-in-out;
+  }
+  
+  .dropdown-content a {
+    text-decoration: none;
+    color: goldenrod;
+    font-weight: 500;
+  }
+  
+  .dropdown-content a:hover {
+    color: #0070f3;
+  }
+  
+  /* === Burger menu (mobile) === */
+  .burger {
+    display: none;
+    font-size: 24px;
     cursor: pointer;
-    outline: none;
-    transition: all 0.3s ease-in-out;
   }
   
-  /* Hover effekti */
-  .lang-select:hover {
-    border-color: #0056b3;
+  /* Mobile menu block */
+  .mobile-menu {
+    background-color: #056937;
+    padding: 15px;
   }
   
-  /* Fokuslangan holat */
-  .lang-select:focus {
-    border-color: #ff6600;
-    box-shadow: 0 0 5px rgba(255, 102, 0, 0.5);
-}
- @media screen and (max-width: 920px) {
-    .header-nav{
-        display: none;
+  .mobile-nav-item {
+    margin-bottom: 10px;
+  }
+  
+  .mobile-nav-title {
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+  }
+  
+  .mobile-subnav {
+    padding-left: 15px;
+    margin-top: 5px;
+  }
+  
+  .mobile-subnav a {
+    display: block;
+    margin: 5px 0;
+    color: #333;
+    text-decoration: none;
+  }
+  .lang-select{
+    background-color: #056937;
+  }
+  /* === Mobile menu styles === */
+.mobile-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.4);
+    z-index: 100;
+  }
+  
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -500px;
+    width: 380px;
+    height: 100vh;
+    background: green;
+    padding: 20px;
+    transition: right 0.3s ease;
+    z-index: 101;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+    overflow-y: auto;
+  }
+  
+  .mobile-menu.open {
+    right: 0;
+  }
+  
+  .mobile-close {
+    font-size: 24px;
+    text-align: right;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .mobile-lang {
+    margin-bottom: 20px;
+  }
+  
+  .mobile-nav-item {
+    margin-bottom: 15px;
+  }
+  
+  .mobile-nav-title {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    background: #056937;
+    border-radius: 5px;
+  }
+  
+  .mobile-subnav {
+    padding-left: 15px;
+    margin-top: 5px;
+  }
+  
+  .mobile-subnav a {
+    display: block;
+    margin: 5px 0;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Hide mobile menu on desktop */
+  @media (min-width: 1005px) {
+    .mobile-menu,
+    .mobile-overlay,
+    .burger {
+      display: none;
     }
-    .description{
-        display: none;
+  }
+  
+  /* Media queries */
+  @media (max-width: 1005px) {
+    .desktop-nav,
+    .desktop-lang {
+      display: none;
     }
- }
+  
+    .burger {
+      display: block;
+    }
+  }
+  
