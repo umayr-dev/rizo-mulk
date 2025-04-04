@@ -1,0 +1,70 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fff;
+  }
+  
+  .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .header-logo h1 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+  }
+  .header-logo span{
+    font-size: 14px;
+  }
+  
+  .header-nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .header-nav a:hover {
+    color: #0056b3;
+  }
+  
+  .header-lang {
+    display: flex;
+    align-items: center;
+  }
+  
+  .lang-select {
+    padding: 8px 12px;
+    border: 2px solid #007bff;
+    border-radius: 6px;
+    background: white;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hover effekti */
+  .lang-select:hover {
+    border-color: #0056b3;
+  }
+  
+  /* Fokuslangan holat */
+  .lang-select:focus {
+    border-color: #ff6600;
+    box-shadow: 0 0 5px rgba(255, 102, 0, 0.5);
+}
+ @media screen and (max-width: 920px) {
+    .header-nav{
+        display: none;
+    }
+    .description{
+        display: none;
+    }
+ }

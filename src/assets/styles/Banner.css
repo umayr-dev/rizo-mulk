@@ -1,0 +1,107 @@
+.banner{
+    background-image: url(/public/images/bg.png);
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 20px 20px;
+    margin: 100px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 20px 0;
+    row-gap: 15px;
+}
+.title{
+    font-size: 28px;
+}
+.orange{
+    color: orangered;
+}
+.banner-content > span{
+    font-size: 14px;
+    width: 80%;
+}
+.search{
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+    justify-content: left;
+    column-gap: 30px;
+    align-items: center;
+}
+.search > span{
+    display: flex;
+    align-items: center;
+}
+.search > span > input{
+    border: none;
+    color: #0F335E;
+    padding: 5px;
+    outline: none;
+    font-size: 16px;
+}
+.search button{
+    width: 160px;
+    height: 50px;
+    border: none;
+    border-radius: 96px;
+    color: white;
+    background-color: #2E2BE3;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1150px)  {
+    .banner-img{
+        width: auto;
+        height: auto;
+    }
+    .banner-img img{
+       width: 450px;
+       height: 300px;
+    }
+    .banner-content{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 20px 0;
+        row-gap: 15px;
+    }
+    .title{
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 920px)  {
+    /* .banner-img{
+        width: auto;
+        height: auto;
+    }
+    .banner-img img{
+       width: 450px;
+       height: 300px;
+    }
+    .banner-content{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 20px 0;
+        row-gap: 15px;
+    }
+    .title{
+        font-size: 22px;
+        } */
+         .banner{
+            flex-direction: column;
+            margin: 50px 0;
+         }
+         .banner-content{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        padding: 20px 0;
+        row-gap: 15px;
+    }
+}
