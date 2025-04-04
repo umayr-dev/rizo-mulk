@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background-color: #fff;
+    background-color: #056937;
   }
   
   .header-logo {
@@ -14,7 +14,7 @@
   
   .header-logo h1 {
     font-size: 18px;
-    color: #333;
+    color: white;
     margin: 0;
   }
   .header-logo span{
@@ -24,7 +24,7 @@
   .header-nav a {
     margin: 0 10px;
     text-decoration: none;
-    color: #007bff;
+    color: white;
     font-weight: bold;
     transition: color 0.3s;
   }
@@ -40,10 +40,10 @@
   
   .lang-select {
     padding: 8px 12px;
-    border: 2px solid #007bff;
+    border: 2px solid white;
     border-radius: 6px;
-    background: white;
-    color: #333;
+    background: #056937;
+    color: white;
     font-size: 16px;
     cursor: pointer;
     outline: none;

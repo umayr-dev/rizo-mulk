@@ -26,6 +26,8 @@ function Header() {
             <a href="#courses">{t("nav2")}</a>
             <a href="#teacher">{t("nav3")}</a>
             <a href="#student">{t("nav4")}</a>
+            <a href="#student">{t("nav5")}</a>
+            <a href="#student">{t("nav6")}</a>
           </div>
           <div className="header-lang">
             <select onChange={changeLanguage} value={i18n.language} className="lang-select">
@@ -34,6 +36,7 @@ function Header() {
               <option value="uz"> O'zbekcha</option>
             </select>
           </div>
+
         </div>
       </header>
     </div>

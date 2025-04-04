@@ -18,9 +18,7 @@
 .title{
     font-size: 28px;
 }
-.orange{
-    color: orangered;
-}
+
 .banner-content > span{
     font-size: 14px;
     width: 80%;
@@ -39,10 +37,11 @@
 }
 .search > span > input{
     border: none;
-    color: #0F335E;
+    color: #f1f1f1;
     padding: 5px;
     outline: none;
     font-size: 16px;
+    background-color: #056937;
 }
 .search button{
     width: 160px;
@@ -50,10 +49,16 @@
     border: none;
     border-radius: 96px;
     color: white;
-    background-color: #2E2BE3;
+    background-color: green;
     font-size: 16px;
 }
-
+.ustunlik{
+    width: 100%;
+    height: 220px;
+    background-color: green;
+    border-radius: 22px;
+    padding: 10px;
+}
 @media screen and (max-width: 1150px)  {
     .banner-img{
         width: auto;
