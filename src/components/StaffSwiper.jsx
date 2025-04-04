@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "../assets/styles/staffSwiper.css";
+import "../assets/styles/staffswiper.css";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 
 const StaffSwiper = () => {
