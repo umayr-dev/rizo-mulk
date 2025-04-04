@@ -120,6 +120,13 @@
 @media screen and (max-width: 400px)  {
     .search{
         width: 320px;
+        display: flex;
+        column-gap: 5px;
+    }
+    .search > span > input{
+        width: 120px;
+        padding: 0 5px;
+        font-size: 12px;
     }
     .search button{
         width:100px;
