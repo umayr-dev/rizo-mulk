@@ -7,8 +7,13 @@ function App() {
   return (
    <>
    <Header/>
+   <div id="banner">
    <Banner/>
+   </div>
+   <div id="courses">
    <Courses/>
+
+   </div>
    </>
   )
 }

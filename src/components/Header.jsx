@@ -22,7 +22,7 @@ function Header() {
             </span>
           </div>
           <div className="header-nav">
-            <a href="#home">{t("nav1")}</a>
+            <a href="#banner">{t("nav1")}</a>
             <a href="#courses">{t("nav2")}</a>
             <a href="#teacher">{t("nav3")}</a>
             <a href="#student">{t("nav4")}</a>

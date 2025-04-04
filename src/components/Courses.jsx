@@ -1,40 +1,31 @@
-import React from 'react'
+import React, { useState } from "react";
 import { useTranslation } from "next-i18next";
 import "../i18n";
-import "../assets/styles/courses.css"
+import "../assets/styles/courses.css";
+import Modal from "./Modal";
+
 function Courses() {
-    const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <>
-    <div className="container">
+      <div className="container">
         <div className="courses">
-            <div className="course-card">
-                <h1>{t("course1")}</h1>
-                <span>3 999 000{t("cost")}</span>
-                <span>{t("tarif1")}</span>
-                <button>{t("btn")}</button>
-
+          {["course1", "course2", "course3"].map((course, index) => (
+            <div className="course-card" key={index}>
+              <h1>{t(course)}</h1>
+              <span className="cost">{[3_999_000, 6_499_000, 12_999_000][index]} {t("cost")}</span>
+              <span>{t(`tarif${index + 1}`)}</span>
+              <button onClick={() => setIsModalOpen(true)}>{t("btn")}</button>
             </div>
-
-            <div className="course-card">
-                <h1>{t("course2")}</h1>
-                <span>6 499 000 {t("cost")}</span>
-                <span>{t("tarif2")}</span>
-                <button>{t("btn")}</button>
-
-            </div>
-
-            <div className="course-card">
-                <h1>{t("course3")}</h1>
-                <span>12 999 000 {t("cost")}</span>
-                <span>{t("tarif3")}</span>
-                <button>{t("btn")}</button>
-
-            </div>
+          ))}
         </div>
-    </div>
+      </div>
+
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </>
-  )
+  );
 }
 
-export default Courses
+export default Courses;

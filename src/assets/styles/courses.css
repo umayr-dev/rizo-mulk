@@ -1,4 +1,5 @@
 .courses{
+    padding: 0 20px;
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -33,4 +34,43 @@
     border-radius: 20px;
     font-size: 18px;
     margin: 10px;
+}
+.cost{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    color: green;
+}
+@media screen and (max-width: 900px) {
+    .courses {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center; /* Markazga joylashtirish */
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .courses {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center; /* Markazga joylashtirish */
+        align-items: center;
+    }
+    
+    .course-card {
+        margin: 20px auto; /* Kartani markazga olish */
+        padding: 10px 30px;
+    }
+}
+@media screen and (max-width: 415px) {
+    .course-card {
+        padding: 10px 10px;
+        width: 280px;
+                
+    }
+    .course-card > h1{
+        font-size: 20px;
+    }
 }

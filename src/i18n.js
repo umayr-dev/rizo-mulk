@@ -27,7 +27,7 @@ const resources = {
     b3d: "2023-yilda Rizomulk Group homiyligida bo‘lib o‘tgan birinchi 'Xalqaro ko‘chmas mulk forumi'.Jamiyat rivojiga faol hissa qo‘shish va insonlar uchun foydali tashabbuslarni yaratish.Talabalar, jamoa va bitiruvchilar yutuqlari orqali yuqori akademik standart va qadriyatlarni shakllantirishga qo‘shilgan hissasi uchun.Sifatli ta’limni rivojlantirishga qo‘shilgan hissasi uchun.",
 
     course1: "Ekspress kurs",
-      cost: "sum",
+      cost: "so'm",
       tarif1: "-Tezlashtirilgan trening-Mijozlar bilan ishlashning asosiy ko'nikmalari-Kasbni tez boshlash strategiyasi-Qisqa o'qitish muddati",
       btn: "Yozilish",
 
@@ -36,6 +36,13 @@ const resources = {
 
       course3: "Individual trening",
       tarif3: "-Ustoz bilan shaxsiy darslar.-Mijoz soʻroviga koʻra obʼyektlarni qidirish-Moslashuvchan jadval.-Oʻz zaif tomonlaringizni chuqur oʻrganish.-Alohida holatlar va strategiyalar-Qisqa vaqt ichida maksimal natijaga erishmoqchi boʻlganlar uchun.",
+      title: "Ismingiz",
+phone: "Telefon raqamingiz",
+clock:"Sizga qulay vaqt",
+acces:"Men Maxfiylik siyosatiga muvofiq shaxsiy ma'lumotlarni qayta ishlashga roziman.",
+call:"menga qo'ng'iroq qiling",
+modaltitle: "Qo'ng'iroqqa buyurtma berish",
+subscribe:"Bizga Qo'shiling",
     }
   },
   en: {
@@ -62,7 +69,7 @@ const resources = {
     b3d: "The first 'International Real Estate Forum — 2023' under the auspices of Rizomulk Group.For active participation in the development of society and the creation of meaningful initiatives for people.For contributions to the development of quality education and the formation of values through the achievements of students.",
 
     course1:"Express course",
-      cost: "Som",
+      cost: "Sum",
       tarif1: "- Accelerated training - Basic skills for working with clients - Strategy for a quick start in the profession - Short training periods",
 btn: "apply",
 
@@ -71,6 +78,14 @@ tarif2: "-Group training-Personal growth and marketing-Practice with real invest
 
 course3: " Individual training",
 tarif3: "- Personal lessons with a mentor. - Search for objects according to customer requests. - Flexible schedule. - In-depth study of your weaknesses. - Individual cases and strategies. - For those who want to maximize results in a short time.",
+
+title: "Name",
+phone: "Your Phone Number",
+clock:"Convenient time",
+acces:"I agree to the processing of personal data in accordance with the Privacy Policy.",
+call:"Call me back",
+modaltitle: "ORDER A CALL",
+subscribe:"Joining",
     }
   },
   ru: {
@@ -104,6 +119,14 @@ tarif3: "- Personal lessons with a mentor. - Search for objects according to cus
 
       course3: " Индивидуальное обучение",
       tarif3: "-Персональные занятия с ментором.-Поиск объектов под запросы клиентов- Гибкий график.-Углубленная проработка ваших слабых сторон.-Индивидуальные кейсы и стратегии-Тех, кто хочет максимизировать результат за короткий срок.",
+
+      modaltitle: "ЗАКАЗАТЬ ЗВОНОК",
+      title: "Имя",
+      phone: "Ваш телефон",
+      clock:"Удобное время",
+      acces:"Я даю согласие на обработку персональных данных в соответствии с Политикой конфиденциальности.",
+      call:"Перезвоните мне",
+      subscribe:"присоединение",
     }
   }
 };
