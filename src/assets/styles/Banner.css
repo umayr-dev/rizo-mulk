@@ -4,9 +4,10 @@
     width: 100%;
     height: auto;
     padding: 20px 20px;
-    margin: 100px 0;
+    margin: 180px 0;
     justify-content: space-between;
     align-items: center;
+    
 }
 .banner-content{
     display: flex;
@@ -53,11 +54,49 @@
     font-size: 16px;
 }
 .ustunlik{
+    margin: 100px 0;
     width: 100%;
-    height: 220px;
+    height: 280px;
     background-color: green;
     border-radius: 22px;
-    padding: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+.card > span{
+    width: 100px;
+    height: 80px;
+    border: none;
+    border-radius: 12px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    font-size: 14px;
+}
+@media screen and (max-width: 1265px) {
+    .ustunlik{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+    }
+    .card{
+        justify-content: center;
+    }
 }
 @media screen and (max-width: 1150px)  {
     .banner-img{
@@ -91,6 +130,48 @@
         width: auto;
         padding: 20px 0;
         row-gap: 15px;
+    }
+    .card{
+        column-gap: 50px;
+    }
+    .ustunlik{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: auto;
+        row-gap: 30px;
+    }
+}
+@media screen and (max-width: 490px) {
+    .card{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-content{
+        align-items: center;
+        row-gap: 10px;
+    }
+    .card-content > span{
+        text-align: center;
+        font-size: 12px;
+    }
+    .card-content > h1{
+        padding: 10px 0;
+        font-size: 18px;
+    }
+    .card >span > img{
+        width: 40px;
+        height: 40px;
+    }
+    .card > span{
+        width: 80px;
+        height: 60px;
+        border: none;
+        border-radius: 12px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(10px);
     }
 }
 @media screen and (max-width: 465px)  {

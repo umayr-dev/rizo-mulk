@@ -28,10 +28,33 @@ function Banner() {
             </div>
         </div>
         <div className="ustunlik">
-            <div className="first">
-                <img src="/images/online-test 1.png" alt="" />
-                <div className="first-content">
+            <div className="card">
+                <span>
 
+                <img width={54} height={54} src="/images/online-test 1.png" alt="" />
+                </span>
+                <div className="card-content">
+                    <h1>{t("banner1")}</h1>
+                    <span>{t("b1d")}</span>
+                </div>
+            </div>
+            <div className="card">
+                <span>
+
+                <img width={54} height={54} src="/images/exam 1.png" alt="" />
+                </span>
+                <div className="card-content">
+                    <h1>{t("banner2")}</h1>
+                    <span>{t("b2d")}</span>
+                </div>
+            </div>
+            <div className="card">
+                <span>
+                <img width={54} height={54} src="/images/certification 1.png" alt="" />
+                </span>
+                <div className="card-content">
+                    <h1>{t("banner3")}</h1>
+                    <span>{t("b3d")}</span>
                 </div>
             </div>
         </div>

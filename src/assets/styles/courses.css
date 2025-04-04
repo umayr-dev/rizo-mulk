@@ -1,0 +1,36 @@
+.courses{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    column-gap: 10px;
+}
+.course-card{
+    margin: 100px 0;
+    border: none;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 390px;
+    padding: 30px 30px;
+    background-color: rgb(7, 53, 7);
+    backdrop-filter: (10px);
+    align-items: center;
+    justify-content: space-between;
+}
+.course-card > span{
+    width: 220px;
+} 
+.course-card > h1{
+    text-align: center;
+    padding: 10px 0;
+}
+.course-card > button{
+    width: 80%;
+    height: 40px;
+    background-color: green;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    margin: 10px;
+}
