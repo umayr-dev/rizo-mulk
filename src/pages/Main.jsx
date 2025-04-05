@@ -16,7 +16,7 @@ function Main() {
                 <Route path="/" element={<Home/>}/>
                 <Route path='/admission' element={<Admissin />} />
                 <Route path='/program' element={<Programma />} />
-                <Route path='/pacademiclife' element={<AcademicLife />} />
+                <Route path='/academiclife' element={<AcademicLife />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/faq' element={<Faq />} />
                 <Route path='/contact' element={<Contact />} />

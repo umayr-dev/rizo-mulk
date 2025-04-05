@@ -1,0 +1,150 @@
+.discount-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .discount-timer-and-form {
+    display: flex;
+    gap: 20px; /* Space between the timer and the form */
+  }
+  
+  .discount-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 300px;
+  }
+  
+  .discount-title {
+    font-size: 24px;
+    color: #ff6347;
+  }
+  
+  .discount-timer {
+    font-size: 32px;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .discount-button {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .discount-button:hover {
+    background-color: #e5533f;
+  }
+  
+  .discount-footer {
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-content h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .modal-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .modal-close-button {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .modal-close-button:hover {
+    background-color: #e5533f;
+  }
+  
+  .discount-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 300px;
+  }
+  
+  .discount-form h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .discount-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .discount-form label {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .discount-form input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  .form-submit-button {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .form-submit-button:hover {
+    background-color: #e5533f;
+  }
+  

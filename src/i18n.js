@@ -5,7 +5,7 @@ import { initReactI18next } from "react-i18next";
 const resources = {
   uz: {
     translation: {
-      description: "Qo'shimcha ta'lim va ofline kurslar",
+      // description: "Qo'shimcha ta'lim va ofline kurslar",
       nav:"Faq",
       nav1: "Qabul",
       nav2: "Dastur",
@@ -58,13 +58,34 @@ prog2: "RIELTORLIK FAOLIYATINI HUQUQIY TARTIBGA SOLISH. Rieltorlik faoliyati to�
 prog1_1: "2. Marketing + Geoanalitika",
 prog2_2: "Instagram. Rieltorlar uchun shaxsiy brend. Umumiy ma’lumot va misollar. 2 - Kelgusi rivojlanish nuqtalari strategiyasi, mijozlar psixologiyasi va xatti-harakati, qanday qilib “sotmasdan sotish”. 3 - Test va BITIRUV – Nazariya oldingi blokda tugadi, bu blok esa akademiya kabi — har bir talaba oxir-oqibatda moliyaviy jihatdan mustaqil liderga aylanadi. Bu yerda sizning bilimingiz sinovdan o‘tadi va muvaffaqiyatli ertangiz boshlanadi! Uyga vazifa: Faqat amaliy materiallar – bu harakatlar asosidir, uni bajarish ishning bir qismi bo‘lib, materialni o‘zlashtirish va natijaga tezroq erishishga yordam beradi.",
 prog3_1: "3. Amaliyot",
-prog3_2: "KO‘CHMAS MULK OBYEKTI TANLOVI. Rieltorlik xizmatini tanishtirish. Mijoz ehtiyojlari va istaklarini aniqlash. Rieltorlik xizmatini sotish. Ideal obyektlarni tanlash algoritmi. Ko‘rishlarni tashkil etish. Mijoz foydasiga xizmat narxini qoplaydigan darajada qanday savdolashish. Bitim uchun zarur bo‘lgan hujjatlarni yig‘ish. Ro‘yxatga olish uchun hujjatlarni topshirish. “Haqiqiy bitimni suratga olish va tahlil qilish” – imitatsiya. Ushbu blok doirasida biz bitimni amalga oshirish uchun barcha zarur hujjatlarni o‘rganamiz va tayyorlaymiz. Ijara bozori asoslari va xususiyatlari. Birinchi uchrashuvni qanday o‘tkazish va xizmat haqida shunday gapirish kerakki, mulk egasi albatta siz bilan ishlashni istasin. Kvartira ijarasi narxini qanday aniqlash kerak."
+prog3_2: "KO‘CHMAS MULK OBYEKTI TANLOVI. Rieltorlik xizmatini tanishtirish. Mijoz ehtiyojlari va istaklarini aniqlash. Rieltorlik xizmatini sotish. Ideal obyektlarni tanlash algoritmi. Ko‘rishlarni tashkil etish. Mijoz foydasiga xizmat narxini qoplaydigan darajada qanday savdolashish. Bitim uchun zarur bo‘lgan hujjatlarni yig‘ish. Ro‘yxatga olish uchun hujjatlarni topshirish. “Haqiqiy bitimni suratga olish va tahlil qilish” – imitatsiya. Ushbu blok doirasida biz bitimni amalga oshirish uchun barcha zarur hujjatlarni o‘rganamiz va tayyorlaymiz. Ijara bozori asoslari va xususiyatlari. Birinchi uchrashuvni qanday o‘tkazish va xizmat haqida shunday gapirish kerakki, mulk egasi albatta siz bilan ishlashni istasin. Kvartira ijarasi narxini qanday aniqlash kerak.",
+yulduz: "Yulduz",
+yp: "Kelajak akademiklarini qabul qilish bo‘yicha mutaxassis",
+sardor: "Sardor",
+sp: "Nekishmut xonadonini mentor",
+alexandr: "Aleksandr",
+ap: "O‘qituvchi",
+nigora: "Nigora",
+nip: "O‘qituvchi yordamchisi tutor",
+elena: "Elena",
+ep: "Emotsional balans bo‘yicha mentor",
+rizo: "Rizo",
+rp: "Ta'lim kuratori",
+nargiza: "Nargiza",
+nap: "Ichki o‘sish bo‘yicha mentor",
+roman: "Roman",
+rop: "Mutaxassislarni tayyorlash bo‘yicha bo‘lim rahbari",
+qodir: "Qodir",
+qp: "Ta'lim bo‘yicha direktor o‘rinbosari",
+aip: "Rizomulk Group direktori",
+aida: "Aida"
+
 
     }
   },
   en: {
     translation: {
-      description: "Further education and ofline courses",
+      // description: "Further education and ofline courses",
       nav1: "Admissin",
       nav2: "Program",
       nav3: "Akademic life",
@@ -118,13 +139,34 @@ prog2: "LEGAL REGULATION OF REAL ESTATE ACTIVITY. Law on Real Estate Activity, S
 prog1_1: "2. Marketing + Geoanalytics",
 prog2_2: "Instagram. Personal brand for realtors. General info & examples. 2 - Strategy for further growth points, client psychology and behavior, how to sell without selling. 3 - Testing and GRADUATION - Theory ended in the previous block, this one is like an academy — where each student ultimately becomes a financially independent leader. This is where your knowledge is tested and your successful future begins! Homework: Purely practical to master the material — it's the foundation of actions that are part of the job, helping you learn faster and achieve results sooner.",
 prog3_1: "3. Practice",
-prog3_2: "SELECTING A REAL ESTATE PROPERTY FOR PURCHASE. Presentation of realtor services for property selection. Identifying needs and preferences. Selling realtor services. Algorithm for selecting ideal properties. Organizing viewings. How to negotiate to offset the cost of your services for your client. Collecting documents needed for the transaction. Submitting documents for registration. “Recording and breakdown of a real transaction” – simulation. Within this block, we study and prepare all the documents required for the deal. Basics and features of the rental market. How to conduct the first meeting and explain your service so that the property owner definitely wants to work with you. How to determine rental prices for apartments."
+prog3_2: "SELECTING A REAL ESTATE PROPERTY FOR PURCHASE. Presentation of realtor services for property selection. Identifying needs and preferences. Selling realtor services. Algorithm for selecting ideal properties. Organizing viewings. How to negotiate to offset the cost of your services for your client. Collecting documents needed for the transaction. Submitting documents for registration. “Recording and breakdown of a real transaction” – simulation. Within this block, we study and prepare all the documents required for the deal. Basics and features of the rental market. How to conduct the first meeting and explain your service so that the property owner definitely wants to work with you. How to determine rental prices for apartments.",
+yulduz: "Yulduz",
+yp: "Specialist in the acceptance of future academics",
+sardor: "Sardor",
+sp: "Real Estate Mentor",
+alexandr: "Alexander",
+ap: "Teacher",
+nigora: "Nigora",
+nip: "Tutor Assistant to the Teacher",
+elena: "Elena",
+ep: "Mentor in Emotional Balance",
+rizo: "Rizo",
+rp: "Training Curator",
+nargiza: "Nargiza",
+nap: "Mentor in Inner Growth",
+roman: "Roman",
+rop: "Head of the Specialist Training Department",
+qodir: "Qodir",
+qp: "Deputy Director of Training",
+aip: "Director of Rizomulk Group",
+aida: "Aida"
+
 
     }
   },
   ru: {
     translation: {
-      description: "Дополнительное образование и офлайн-курсы",
+      // description: "Дополнительное образование и офлайн-курсы",
       nav1: "Поступление",
       nav2: "Программа",
       nav3: "Академическая жизнь",
@@ -177,6 +219,27 @@ prog3_2: "SELECTING A REAL ESTATE PROPERTY FOR PURCHASE. Presentation of realtor
       prog2_2:"Инстаграм. Личный бренд для риэлторов. Общая информация-примеры2-Стратегия дальнейших точек роста, психология и поведение клиентов, как продавать не продавая3-Тестирование и ВЫПУСК-Теория закончилась на предыдущем блоке, этот блок как академия-каждый студент которого в конечном счёте становится финансово независимым лидером.Здесь начинается проверка ваших знаний и ваше успешное завтра!Домашнее задание: Исключительно практическое для освоение материалы:-это основа действий, выполнение которых входит в работу, оно помогает осваивать материал и быстрей добиваться результата,",
       prog3_1:"3 Практика",
       prog3_2:"ПОДБОР ОБЪЕКТА НЕДВИЖИМОСТИ ДЛЯ ПОКУПКИ.Презентация риэлторской услуги по подбору объектаВыявление потребностей и пожеланий. Продажа риэлторской услугиАлгоритм подбора идеально подходящих объектов.Организация просмотров. Как торговаться так , чтобы отбить стоимость услуги для своего клиентаСбор документов, необходимых для сделкиПодача документов на регистрацию“Съёмка и разбор реальной сделки” – имитацияВ рамках этого блока изучаем и готовим все документы, необходимые для проведение сделки.Основы и особенности рынка аренда.Как проводить первую встречу и рассказать про услугу так, чтобы собственник точно захотел с вами работать.Как определить цену аренды на квартиры",
+
+      yulduz:"Юлдуз",
+      yp:"Специалист по приемуБудущих академиков",
+      sardor:"Сардор",
+      sp:"Ментор по недвижимости",
+      alexandr:"Александр",
+      ap:"Преподаватель",
+      nigora:"Нигора",
+      nip:"ТьюторПомощник преподователя",
+      elena:"Елена",
+      ep:"Ментор по Эмоциональному балансу",
+      rizo:"Ризо",
+      rp:"Куратор обучени",  
+      nargiza:"Наргиза",
+      nap:"Наставник по Внутреннему росту",
+      roman:"Роман",
+      rop:"Руководитель отдела Обучения специалистов",
+      qodir:"Кодир",
+      qp:"Заместитель директора по обучению",
+      aip:"Директор Rizomulk Group",
+      aida:"Аида",
     }
   }
 };

@@ -1,5 +1,6 @@
 import Banner from '../components/Banner'
 import Courses from '../components/Courses'
+import DiscountSection from '../components/DiscountTimer'
 import StaffSwiper from '../components/StaffSwiper'
 
 function Home() {
@@ -11,6 +12,7 @@ function Home() {
    <div id="courses">
    <Courses/>
     <StaffSwiper/>
+    <DiscountSection/>
    </div>
    </>
   )

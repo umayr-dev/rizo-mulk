@@ -7,18 +7,18 @@ import { Link } from "react-router-dom";
 function Header() {
   const { t, i18n } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState(null);
+  // const [activeDropdown, setActiveDropdown] = useState(null);
   const menuRef = useRef(null);
 
   const changeLanguage = (event) => {
     i18n.changeLanguage(event.target.value);
   };
 
-  const navItems = ["nav1", "nav2", "nav3", "nav4", "nav5", "nav6"];
+  // const navItems = ["nav1", "nav2", "nav3", "nav4", "nav5", "nav6"];
 
-  const toggleDropdown = (key) => {
-    setActiveDropdown((prev) => (prev === key ? null : key));
-  };
+  // const toggleDropdown = (key) => {
+  //   setActiveDropdown((prev) => (prev === key ? null : key));
+  // };
 
   const handleClickOutside = (e) => {
     if (menuRef.current && !menuRef.current.contains(e.target)) {
@@ -42,10 +42,10 @@ function Header() {
         <div className="header">
           <Link to={"/"}>
           <div className="header-logo">
-            <img src="/images/logo.png" width={80} height={80} alt="Logo" />
+            <img src="/images/rizo mulk logo.png" width={80} height={80} alt="Logo" />
             <span>
               <h1>Rizomulk Academy</h1>
-              <span className="description">{t("description")}</span>
+              {/* <span className="description">{t("description")}</span> */}
             </span>
           </div>
           </Link>

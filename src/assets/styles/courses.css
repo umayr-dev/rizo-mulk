@@ -14,7 +14,8 @@
     width: 400px;
     height: 490px;
     padding: 30px 30px;
-    background-color: rgb(7, 53, 7);
+    background-color: rgb(7, 66, 7);
+    
     backdrop-filter: (10px);
     align-items: center;
     justify-content: space-between;
