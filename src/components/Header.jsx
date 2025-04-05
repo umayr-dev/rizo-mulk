@@ -42,7 +42,7 @@ function Header() {
         <div className="header">
           <Link to={"/"}>
           <div className="header-logo">
-            <img src="/images/rizo mulk logo.png" width={80} height={80} alt="Logo" />
+            <img src="/images/rizo mulk logo.png" width={100} height={100} alt="Logo" />
             <span>
               <h1>Rizomulk Academy</h1>
               {/* <span className="description">{t("description")}</span> */}

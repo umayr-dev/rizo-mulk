@@ -138,6 +138,8 @@
   .lang-select{
     /* background-color: #056937;      */
     background: linear-gradient(45deg, #056937, #2d8b58, #56b68c);
+    border: 1px solid gray;
+    border-radius: 4px;
   }
   /* === Mobile menu styles === */
 .mobile-overlay {
@@ -149,7 +151,9 @@
     background: rgba(0,0,0,0.4);
     z-index: 100;
   }
-  
+  select > option{
+    background-color: #056937;
+  }
   .mobile-menu {
     position: fixed;
     top: 0;
