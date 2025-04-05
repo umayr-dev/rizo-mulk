@@ -152,22 +152,72 @@ function Header() {
           </div>
 
           <div className="mobile-nav">
-            {navItems.map((key, index) => (
-              <div key={index} className="mobile-nav-item">
-                <div
-                  className="mobile-nav-title"
-                  onClick={() => toggleDropdown(key)}
-                >
-                  {t(key)} {activeDropdown === key ? "▲" : "▼"}
-                </div>
-                {activeDropdown === key && (
-                  <div className="mobile-subnav">
-                    <a href="#sub1">Sub item 1</a>
-                    <a href="#sub2">Sub item 2</a>
+            <div className="nav-item">
+               <Link to={"/admission"}>
+                <a href="">{t("nav1")}</a>
+                <div className="nav-dropdown">
+                  <div className="dropdown-content">
+                    <a href="">{t("drop1")}</a>
                   </div>
-                )}
+                </div>
+               </Link> 
               </div>
-            ))}
+
+              <div className="nav-item">
+                <Link to={"/program"}>
+                <a href="">{t("nav2")}</a>
+                <div className="nav-dropdown">
+                  <div className="dropdown-content">
+                  <a href="">{t("drop21")}</a>
+                    <a href="">{t("drop22")}</a>
+                    <a href="">{t("drop23")}</a>
+                  </div>
+                </div>
+               </Link> 
+              </div>
+
+              <div className="nav-item">
+                <Link to={"/academiclife"}>
+                <a href="">{t("nav3")}</a>
+                <div className="nav-dropdown">
+                  <div className="dropdown-content">
+                    <a href="">{t("drop31")}</a>
+                    <a href="">{t("drop32")}</a>
+                    <a href="">{t("drop33")}</a>
+                    
+                  </div>
+                </div>
+                </Link>
+              </div>
+
+              <div className="nav-item">
+                <a href="">{t("nav4")}</a>
+                <div className="nav-dropdown">
+                  <div className="dropdown-content">
+                  <a href="">{t("drop4")}</a>
+                    
+                  </div>
+                </div>
+              </div>
+              <div className="nav-item">
+                <a href="">{t("nav")}</a>
+                <div className="nav-dropdown">
+                  <div className="dropdown-content">
+                  <a href="">{t("drop5")}</a>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div className="nav-item">
+                <a href="">{t("nav5")}</a>
+              </div>
+
+
+              <div className="nav-item">
+                <a href="">{t("nav6")}</a>
+              </div>
+      
           </div>
         </div>
       </header>
