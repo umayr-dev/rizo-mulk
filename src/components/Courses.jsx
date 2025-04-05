@@ -1,8 +1,8 @@
-import React, { useState } from "react";
 import { useTranslation } from "next-i18next";
 import "../i18n";
 import "../assets/styles/courses.css";
 import Modal from "./Modal";
+import { useState } from "react";
 
 function Courses() {
   const { t } = useTranslation();

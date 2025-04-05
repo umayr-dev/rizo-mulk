@@ -1,10 +1,9 @@
-import React from "react";
 import "../assets/styles/modal.css";
 import { useTranslation } from "next-i18next";
 import "../i18n";
 const Modal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
-   const { t, i18n } = useTranslation();
+   const { t,  } = useTranslation();
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>

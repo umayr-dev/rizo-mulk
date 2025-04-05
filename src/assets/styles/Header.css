@@ -40,47 +40,61 @@
   }
   
   /* === Desktop NAV hover dropdown === */
-  .nav-item {
-    position: relative;
-  }
-  
-  .nav-dropdown {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100px;
-    height: 0;
-    overflow: hidden;
-    background: #fff;
-    transition: all 0.3s ease;
-    z-index: 100;
-  }
-  
-  .nav-item:hover .nav-dropdown {
-    height: 100px;
-  }
-  
-  .dropdown-content {
-    background-color: #056937;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    padding: 30px;
-    transition:  all 0.4s ease-in-out;
-  }
-  
-  .dropdown-content a {
-    text-decoration: none;
-    color: goldenrod;
-    font-weight: 500;
-  }
-  
-  .dropdown-content a:hover {
-    color: #0070f3;
-  }
-  
+  /* Dropdown container */
+.nav-item {
+  position: relative;
+  padding: 0 10px;
+}
+
+.nav-item > a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 10px 0;
+  display: inline-block;
+}
+
+/* Hide dropdown by default */
+.nav-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: max-content;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  z-index: 10;
+  border-radius: 8px;
+}
+
+/* Show dropdown on hover */
+.nav-item:hover .nav-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Dropdown content links */
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  padding: 8px 0;
+  color: #444;
+  transition: color 0.2s;
+}
+
+.dropdown-content a:hover {
+  color: #0070f3;
+}
+
   /* === Burger menu (mobile) === */
   .burger {
     display: none;
@@ -187,7 +201,7 @@
   }
   
   /* Hide mobile menu on desktop */
-  @media (min-width: 1005px) {
+  @media (min-width: 1280px) {
     .mobile-menu,
     .mobile-overlay,
     .burger {
@@ -196,7 +210,7 @@
   }
   
   /* Media queries */
-  @media (max-width: 1005px) {
+  @media (max-width: 1280px) {
     .desktop-nav,
     .desktop-lang {
       display: none;
@@ -206,4 +220,15 @@
       display: block;
     }
   }
-  
+  @media screen and (max-width: 620px) {
+    .header-logo img{
+      width: 40px;
+      height: 40px;
+    }
+    .header-logo > span >h1{
+      font-size: 16px;
+    }
+    .header-logo > span > span{
+      display: none;
+    }
+  }

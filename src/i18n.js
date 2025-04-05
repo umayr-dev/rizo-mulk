@@ -6,6 +6,7 @@ const resources = {
   uz: {
     translation: {
       description: "Qo'shimcha ta'lim va ofline kurslar",
+      nav:"Faq",
       nav1: "Qabul",
       nav2: "Dastur",
       nav3: "Akademik hayot",
@@ -43,6 +44,22 @@ acces:"Men Maxfiylik siyosatiga muvofiq shaxsiy ma'lumotlarni qayta ishlashga ro
 call:"menga qo'ng'iroq qiling",
 modaltitle: "Qo'ng'iroqqa buyurtma berish",
 subscribe:"Bizga Qo'shiling",
+drop1: "Qabul bo‘yicha to‘liq qo‘llanma",
+drop21: "Yuridik xizmatlar",
+drop22: "Marketing + Geoanalitika",
+drop23: "Marketing + Geoanalitika",
+drop31: "Akademistlarga ko‘mak",
+drop32: "Kampus",
+drop33: "Roman oqimining fotosuratlari va videolari",
+drop4: "1 Vizyon  2 Missiya  3 Qadriyatlar",
+drop5: "1 Akademiya nimalarni o‘rgatadi? 2 Ta’lim yo‘nalishlari qanday? 3 Talabalarga kimlar dars beradi? 4 Akademiya qayerda joylashgan?",
+prog: "1. Yuridik xizmatlar",
+prog2: "RIELTORLIK FAOLIYATINI HUQUQIY TARTIBGA SOLISH. Rieltorlik faoliyati to‘g‘risidagi qonun, Rieltorlik faoliyatining standartlari, Ichki nazorat qoidalari. Rieltorlik xizmatlari iste’molchilari va uchinchi tomonlarning huquqlarini himoya qilishning o‘ziga xos xususiyatlari. Rieltorlik faoliyatining huquqiy asoslari. Rieltorlik faoliyatida FATF tavsiyalari. Axborot va maslahat xizmatlarining asosiy tamoyillari. 2 - Asosiy tamoyillarning amaliy qo‘llanilishi. 3 - Ko‘chmas mulk sohasidagi kasb asoslari. 4 - Ko‘chmas mulk bozori asoslari. Rieltorlarning moliyaviy jinoyatlarning oldini olishdagi roli.",
+prog1_1: "2. Marketing + Geoanalitika",
+prog2_2: "Instagram. Rieltorlar uchun shaxsiy brend. Umumiy ma’lumot va misollar. 2 - Kelgusi rivojlanish nuqtalari strategiyasi, mijozlar psixologiyasi va xatti-harakati, qanday qilib “sotmasdan sotish”. 3 - Test va BITIRUV – Nazariya oldingi blokda tugadi, bu blok esa akademiya kabi — har bir talaba oxir-oqibatda moliyaviy jihatdan mustaqil liderga aylanadi. Bu yerda sizning bilimingiz sinovdan o‘tadi va muvaffaqiyatli ertangiz boshlanadi! Uyga vazifa: Faqat amaliy materiallar – bu harakatlar asosidir, uni bajarish ishning bir qismi bo‘lib, materialni o‘zlashtirish va natijaga tezroq erishishga yordam beradi.",
+prog3_1: "3. Amaliyot",
+prog3_2: "KO‘CHMAS MULK OBYEKTI TANLOVI. Rieltorlik xizmatini tanishtirish. Mijoz ehtiyojlari va istaklarini aniqlash. Rieltorlik xizmatini sotish. Ideal obyektlarni tanlash algoritmi. Ko‘rishlarni tashkil etish. Mijoz foydasiga xizmat narxini qoplaydigan darajada qanday savdolashish. Bitim uchun zarur bo‘lgan hujjatlarni yig‘ish. Ro‘yxatga olish uchun hujjatlarni topshirish. “Haqiqiy bitimni suratga olish va tahlil qilish” – imitatsiya. Ushbu blok doirasida biz bitimni amalga oshirish uchun barcha zarur hujjatlarni o‘rganamiz va tayyorlaymiz. Ijara bozori asoslari va xususiyatlari. Birinchi uchrashuvni qanday o‘tkazish va xizmat haqida shunday gapirish kerakki, mulk egasi albatta siz bilan ishlashni istasin. Kvartira ijarasi narxini qanday aniqlash kerak."
+
     }
   },
   en: {
@@ -54,6 +71,7 @@ subscribe:"Bizga Qo'shiling",
       nav4: "About us",
       nav5: "Our contacts",
       nav6: "Social Media",
+      nav:"FAQ",
       bannertitle: "Join the",
       bannertitle1: " first",
       bannerdescription: "And much more for teachers and students. The project tries to make education more accessible",
@@ -86,6 +104,22 @@ acces:"I agree to the processing of personal data in accordance with the Privacy
 call:"Call me back",
 modaltitle: "ORDER A CALL",
 subscribe:"Joining",
+drop1: "Admission instructions from A to Z",
+drop21: "Legal services",
+drop22: "Marketing + Geoanalytics",
+drop23: "Marketing + Geoanalytics",
+drop31: "Support for the academician",
+drop32: "Campus",
+drop33: "Photos of Roman’s stream and videos",
+drop4: "1 Vision  2 Mission  3 Values",
+drop5: "1 What will the academy teach? 2 What are the areas of study? 3 Who will teach the students? 4 Where is your academy located?",
+prog: "1. Legal Services",
+prog2: "LEGAL REGULATION OF REAL ESTATE ACTIVITY. Law on Real Estate Activity, Standards of Real Estate Activity, Internal Control Rules. Specifics of protecting the rights of consumers of real estate services and third parties. Legal foundations of real estate activities. FATF recommendations in real estate operations. Basic principles of information and consulting services. 2 - Practical application of basic principles. 3 - Basics of the profession in the field of real estate. 4 - Fundamentals of the real estate market. The role of realtors in preventing financial crimes.",
+prog1_1: "2. Marketing + Geoanalytics",
+prog2_2: "Instagram. Personal brand for realtors. General info & examples. 2 - Strategy for further growth points, client psychology and behavior, how to sell without selling. 3 - Testing and GRADUATION - Theory ended in the previous block, this one is like an academy — where each student ultimately becomes a financially independent leader. This is where your knowledge is tested and your successful future begins! Homework: Purely practical to master the material — it's the foundation of actions that are part of the job, helping you learn faster and achieve results sooner.",
+prog3_1: "3. Practice",
+prog3_2: "SELECTING A REAL ESTATE PROPERTY FOR PURCHASE. Presentation of realtor services for property selection. Identifying needs and preferences. Selling realtor services. Algorithm for selecting ideal properties. Organizing viewings. How to negotiate to offset the cost of your services for your client. Collecting documents needed for the transaction. Submitting documents for registration. “Recording and breakdown of a real transaction” – simulation. Within this block, we study and prepare all the documents required for the deal. Basics and features of the rental market. How to conduct the first meeting and explain your service so that the property owner definitely wants to work with you. How to determine rental prices for apartments."
+
     }
   },
   ru: {
@@ -127,6 +161,22 @@ subscribe:"Joining",
       acces:"Я даю согласие на обработку персональных данных в соответствии с Политикой конфиденциальности.",
       call:"Перезвоните мне",
       subscribe:"Присоединение",
+
+      drop1: "Инструкция поступления от А до Я",
+      drop21: "Юридические услуги",
+      drop22: "маркетинг+ геоаналитика",
+      drop23: "маркетинг+ геоаналитика",
+      drop31:"Поддержка академиста",
+      drop32: "Кампус",
+      drop33:"Фото  потока Романа и видео",
+      drop4:"1 Видение 2 Миссия3 Ценности",
+      drop5: "1 Чему будет учить академия?2 Каковы области обучения?3 Кто будет обучать студентов?4 Где расположена ваша академия?",
+      prog:"1  Юридические услуги",
+      prog2:"ПРАВОВОЕ РЕГУЛИРОВАНИЕ РИЭЛТОРСКОЙ ДЕЯТЕЛЬНОСТИ   Закон о риэлторской деятельности, Стандарты риэлторской деятельности, Правила внутреннего контроля.Особенности защиты прав потребителей риэлторских услуг и третьих лиц.Правовые основы риэлторской деятельности.Рекомендации ФАТФ в риэлторской деятельностиБазовые принципы информационных и консультационных услуг. 2- Практическое применение базовых принципов3- Основы профессии в сфере недвижимости4- Основы рынка недвижимостиРоль риэлторов в предотвращении финансовых преступлений",
+      prog1_1:"2.  маркетинг+ геоаналитика",
+      prog2_2:"Инстаграм. Личный бренд для риэлторов. Общая информация-примеры2-Стратегия дальнейших точек роста, психология и поведение клиентов, как продавать не продавая3-Тестирование и ВЫПУСК-Теория закончилась на предыдущем блоке, этот блок как академия-каждый студент которого в конечном счёте становится финансово независимым лидером.Здесь начинается проверка ваших знаний и ваше успешное завтра!Домашнее задание: Исключительно практическое для освоение материалы:-это основа действий, выполнение которых входит в работу, оно помогает осваивать материал и быстрей добиваться результата,",
+      prog3_1:"3 Практика",
+      prog3_2:"ПОДБОР ОБЪЕКТА НЕДВИЖИМОСТИ ДЛЯ ПОКУПКИ.Презентация риэлторской услуги по подбору объектаВыявление потребностей и пожеланий. Продажа риэлторской услугиАлгоритм подбора идеально подходящих объектов.Организация просмотров. Как торговаться так , чтобы отбить стоимость услуги для своего клиентаСбор документов, необходимых для сделкиПодача документов на регистрацию“Съёмка и разбор реальной сделки” – имитацияВ рамках этого блока изучаем и готовим все документы, необходимые для проведение сделки.Основы и особенности рынка аренда.Как проводить первую встречу и рассказать про услугу так, чтобы собственник точно захотел с вами работать.Как определить цену аренды на квартиры",
     }
   }
 };
