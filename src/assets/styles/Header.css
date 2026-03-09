@@ -1,0 +1,263 @@
+/* Layout */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 50px;
+    background: linear-gradient(45deg, #44b082, #056937, #2d8b58);
+    /* background-color: #056937; */
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+  }
+  
+  .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .header-logo span, .header-logo > span > h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+  }
+  
+  .header-nav {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .header-lang {
+    margin-left: 20px;
+  }
+  
+  .lang-select {
+    padding: 4px 10px;
+  }
+  
+  /* === Desktop NAV hover dropdown === */
+  /* Dropdown container */
+.nav-item {
+  position: relative;
+  padding: 0 10px;
+}
+.nav-item1 {
+  position: relative;
+  padding: 0 10px;
+}
+.nav-item > a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 10px 0;
+  display: inline-block;
+}
+.nav-item1 > a {
+  text-decoration: none;
+  color: #0f321d;
+  font-weight: 500;
+  padding: 10px 0;
+  display: inline-block;
+}
+
+/* Hide dropdown by default */
+.nav-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: max-content;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  z-index: 10;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Show dropdown on hover */
+.nav-item:hover .nav-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Dropdown content links */
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  padding: 8px 0;
+  color: #444;
+  transition: color 0.2s;
+}
+
+.dropdown-content a:hover {
+  color: #0070f3;
+}
+
+  /* === Burger menu (mobile) === */
+  .burger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Mobile menu block */
+  .mobile-menu {
+    background-color: #056937;
+    padding: 15px;
+    overflow: hidden;
+  }
+  
+  .mobile-nav-item {
+    margin-bottom: 10px;
+  }
+  
+  .mobile-nav-title {
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: black;
+    border-radius: 5px;
+  }
+  
+  .mobile-subnav {
+    padding-left: 15px;
+    margin-top: 5px;
+    z-index: 1000;
+  }
+  
+  .mobile-subnav a {
+    display: block;
+    margin: 5px 0;
+    color: #333;
+    text-decoration: none;
+  }
+  .lang-select{
+    /* background-color: #056937;      */
+    background: linear-gradient(45deg, #056937, #2d8b58, #56b68c);
+    border: 1px solid gray;
+    border-radius: 4px;
+  }
+  /* === Mobile menu styles === */
+.mobile-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.4);
+    z-index: 100;
+  }
+  select > option{
+    background-color: #056937;
+  }
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -500px;
+    width: 380px;
+    height: 100vh;
+    color: #0f321d;
+    background-color: white;
+    padding: 20px;
+    transition: right 0.3s ease;
+    z-index: 101;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+    overflow-y: auto;
+  }
+  
+  .mobile-menu.open {
+    right: 0;
+  }
+  
+  .mobile-close {
+    font-size: 24px;
+    text-align: right;
+    cursor: pointer;
+    margin-bottom: 20px;
+    z-index: 102; /* ← yuqori bo‘lishi kerak */
+    position: relative;
+    background-color: transparent;
+  }
+  
+  
+  .mobile-lang {
+    margin-bottom: 20px;
+  }
+  
+  .mobile-nav-item {
+    margin-bottom: 15px;
+  }
+  
+  .mobile-nav-title {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    background: #056937;
+    border-radius: 5px;
+    color: #0f321d;
+  }
+  
+  .mobile-subnav {
+    padding-left: 15px;
+    margin-top: 5px;
+  }
+  
+  .mobile-subnav a {
+    display: block;
+    margin: 5px 0;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Hide mobile menu on desktop */
+  @media (min-width: 1280px) {
+    .mobile-menu,
+    .mobile-overlay,
+    .burger {
+      display: none;
+    }
+  }
+  
+  /* Media queries */
+  @media (max-width: 1280px) {
+    .desktop-nav,
+    .desktop-lang {
+      display: none;
+    }
+  
+    .burger {
+      display: block;
+    }
+  }
+  @media screen and (max-width: 620px) {
+    .header-logo img{
+      width: 40px;
+      height: 40px;
+    }
+    .header-logo > span >h1{
+      font-size: 16px;
+    }
+    .header-logo > span > span{
+      display: none;
+    }
+  }

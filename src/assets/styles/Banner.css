@@ -1,0 +1,284 @@
+.banner{
+    background-image: url(/public/images/bg.png);
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 20px 20px;
+    margin: 180px 0 20px 0;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.banner-img{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 20px 0;
+    row-gap: 15px;
+}
+.title{
+    font-size: 28px;
+}
+
+.banner-content > span{
+    font-size: 14px;
+    width: 80%;
+}
+.search{
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+    justify-content: left;
+    column-gap: 30px;
+    align-items: center;
+}
+.search > span{
+    display: flex;
+    align-items: center;
+}
+.search > span > input{
+    border: none;
+    color: #f1f1f1;
+    padding: 5px;
+    outline: none;
+    font-size: 16px;
+    background-color: transparent;
+}
+.search >span > input::placeholder{
+    color: white;
+}
+.search button{
+    width: 160px;
+    height: 50px;
+    border: none;
+    border-radius: 96px;
+    color: #0f321d;
+    background-color: white;
+    font-size: 16px;
+}
+.ustunlik{
+    margin: 200px 0 100px 0;
+    width: 100%;
+    min-height: 280px;
+    height: auto;
+    background-color: white;
+    border-radius: 22px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start; /* cards start from top, grow down */
+    justify-content: space-between;
+
+}
+.ustunlik h1{
+    color: #0f321d;
+}
+.partner{
+    padding: 20px;
+    margin: 100px 0;
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+}
+.image{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.image img{
+    border-radius: 4px;
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+.ustunlik span{
+    color: #0f321d;
+}
+.card > span{
+    width: 100px;
+    height: 80px;
+    border: none;
+    border-radius: 12px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+    font-size: 14px;
+}
+.card-content > span{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+@media screen and (max-width: 1265px) {
+    .ustunlik{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+    }
+    .card{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 1150px)  {
+    .banner-img{
+        width: auto;
+        height: auto;
+    }
+    .banner-img img{
+       width: 450px;
+       height: 300px;
+    }
+    .banner-content{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 20px 0;
+        row-gap: 15px;
+    }
+    .title{
+        font-size: 22px;
+    }
+    /* .image {
+        padding: 20px 0 0 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px auto;
+    } */
+     .image img:nth-child(2){
+      width: 280px;
+      height: 100px;
+     }
+}
+@media screen and (max-width: 920px)  {
+         .banner{
+            padding: 10px 20px;
+            flex-direction: column;
+            margin: 120px 0 0 0;
+         }
+         .banner-content{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        padding: 20px 0;
+        row-gap: 15px;
+    }
+    .card{
+        column-gap: 50px;
+    }
+    .ustunlik{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: auto;
+        row-gap: 30px;
+    }
+    .ustunlik span{
+        color: #0f321d;
+    }
+}
+@media screen and (max-width: 780px) {
+    .partner{
+        align-items: center;
+        margin: 20px 0;
+    }
+    .image{
+        flex-direction: column;
+        margin: 20px auto;
+        row-gap: 30px;
+    }
+}
+@media screen and (max-width: 490px) {
+    .card{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-content{
+        align-items: center;
+        row-gap: 10px;
+    }
+    .card-content > span{
+        text-align: center;
+        font-size: 12px;
+    }
+    .card-content > h1{
+        padding: 10px 0;
+        font-size: 18px;
+    }
+    .card >span > img{
+        width: 40px;
+        height: 40px;
+    }
+    .card > span{
+        width: 80px;
+        height: 60px;
+        border: none;
+        border-radius: 12px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(10px);
+    }
+}
+@media screen and (max-width: 465px)  {
+    .banner-content{
+        padding: 10px 20px;
+    }
+    .title{
+        font-size: 14px;
+    }
+
+    .banner-content > span{
+        font-size: 12px;
+        width: 60%;
+    }
+    .search{
+        width: 360px;
+        
+    }
+    .search button{
+        width: 120px;
+        height: 30px;
+        border: none;
+        border-radius: 96px;
+        /* color: white; */
+       
+        font-size: 12px;
+    }
+    .banner-img img{
+      width: 340px;
+      height: 180px;
+     }
+}
+@media screen and (max-width: 400px)  {
+    .search{
+        width: 320px;
+        display: flex;
+        column-gap: 5px;
+    }
+    .search > span > input{
+        width: 120px;
+        padding: 0 5px;
+        font-size: 12px;
+    }
+    .search button{
+        width:100px;
+        height: 30px;
+    }
+}

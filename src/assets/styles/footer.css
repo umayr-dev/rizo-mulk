@@ -1,0 +1,277 @@
+/* Footer.css */
+.footer {
+  background: linear-gradient(90deg, #0a3d23, #155d37);
+  padding: 30px 0;
+  color: white;
+}
+.location-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: start;
+  row-gap: 15px;
+}
+.location-info span {
+  text-align: left;
+  margin: 10px 0;
+}
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  gap: 30px;
+}
+.main {
+  flex: 1;
+}
+.footer-left {
+  flex: 1;
+  text-align: center;
+  color: white;
+  padding: 50px;
+  font-size: 18px;
+}
+.footer-right {
+  width: 750px;
+  display: flex;
+  /* background-color: #222; */
+}
+
+.contact-form {
+  /* background: #222; */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.contact-form h3 {
+  margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 3px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background: #28a745;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.contact-info {
+  /* background: #222; */
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 1;
+}
+.contact-info span {
+  color: white;
+}
+.contact-form textarea {
+  resize: none;
+  height: 100px;
+}
+.contact-info h3 {
+  margin-bottom: 10px;
+}
+.map-placeholder {
+  display: flex;
+  width: 700px;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  padding-left: 30px;
+}
+.map-placeholder span {
+  color: aliceblue;
+  font-size: 14px;
+}
+
+/* Map Container and Controls */
+.map-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.map-container:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+.map-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(5, 105, 55, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.map-overlay:hover {
+  background: rgba(5, 105, 55, 0.9);
+}
+
+.map-overlay-content {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.map-overlay-content svg {
+  margin-bottom: 12px;
+  opacity: 0.9;
+}
+
+.map-overlay-content small {
+  display: block;
+  margin-top: 8px;
+  font-size: 12px;
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+.map-controls {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.map-control-btn {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 6px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.map-control-btn:hover {
+  background: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.map-control-btn svg {
+  color: #333;
+}
+.social {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.social a {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+@media screen and (max-width: 1350px) {
+  .footer-right {
+    flex-direction: column-reverse;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .footer-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 777px) {
+  .footer-right {
+    flex-direction: column-reverse;
+    padding: 10px 20px;
+    width: auto;
+  }
+  .map {
+    width: 100%; /* Container ichida to'liq kenglik */
+    max-width: 100%; /* Scroll bo'lmasligi uchun */
+    height: 300px;
+    margin: 0;
+  }
+  .map-placeholder {
+    width: 100%; /* To'liq kenglik */
+    padding-left: 0; /* Padding olib tashlash */
+  }
+  .footer-left {
+    padding: 20px 10px; /* Padding kamaytirish */
+  }
+  .map-container {
+    border-radius: 8px; /* Mobile da kichikroq radius */
+  }
+  .map-controls {
+    top: 8px;
+    right: 8px;
+    gap: 6px;
+  }
+  .map-control-btn {
+    width: 32px;
+    height: 32px;
+  }
+}
+@media screen and (max-width: 615px) {
+  .map {
+    width: 100%; /* To'liq kenglik */
+    max-width: 100%;
+    height: 280px;
+  }
+  .map-placeholder {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 515px) {
+  .map {
+    width: 100%; /* To'liq kenglik */
+    max-width: 100%;
+    height: 250px;
+  }
+  .map-placeholder {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 415px) {
+  .map {
+    width: 100%; /* To'liq kenglik */
+    max-width: 100%;
+    height: 200px; /* Biroz kattaroq qildim */
+  }
+  .map-placeholder {
+    width: 100%;
+    padding-left: 0;
+  }
+  .footer {
+    margin: 20px auto;
+  }
+  .footer-left {
+    padding: 15px 5px; /* Juda kichik padding */
+  }
+}

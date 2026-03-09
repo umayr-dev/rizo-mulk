@@ -1,0 +1,143 @@
+.courses {
+  padding: 0 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  column-gap: 10px;
+  align-items: stretch; /* Kartalarni bir xil balandlikda qilish */
+}
+.course-card {
+  margin: 100px 0;
+  border: none;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 550px; /* Balandlikni qisqartirdim */
+  padding: 40px; /* Padding qisqartirdim */
+  background-color: white;
+  backdrop-filter: (10px);
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px); /* Hover da yuqoriga ko'tarish */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.course-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Yuqoridan boshlash */
+  width: 100%;
+  min-height: 280px;
+  padding: 10px 0;
+}
+
+.course-content > span {
+  margin: 2px 0;
+  font-size: 16px; /* Eski o'lchamga qaytardim */
+  line-height: 1.4; /* Eski holiga qaytardim */
+}
+.course-card > span {
+  width: 100%;
+  color: #0f321d;
+  text-align: center;
+  margin: 3px 0;
+  line-height: 1.4; /* Eski holiga qaytardim */
+  font-size: 16px; /* Eski o'lchamga qaytardim */
+}
+.course-card > h1 {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  color: #0f321d;
+  font-size: 26px; /* Eski o'lchamga qaytardim */
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.zb {
+  padding: 0;
+  margin-bottom: 18px;
+  font-size: 26px;
+}
+.zb1 {
+  margin-bottom: 5px; /* Boshqa span elementlar bilan bir xil */
+  font-weight: 600; /* Biroz qalin qilish */
+}
+.course-card > button {
+  width: 80%;
+  height: 50px; /* Biroz balandroq */
+  background-color: #0f321d;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: auto; /* Buttonni pastga surish */
+  margin-bottom: 0;
+}
+
+.course-card > button:hover {
+  background-color: #1a4d2e;
+  transform: scale(1.05);
+}
+.cost {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 26px; /* Eski o'lchamga qaytardim */
+  color: green;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 0;
+}
+@media screen and (max-width: 942px) {
+  .courses {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center; /* Markazga joylashtirish */
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .courses {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: stretch; /* Kartalarni bir xil qilish */
+    gap: 20px;
+  }
+
+  .course-card {
+    margin: 20px auto;
+    padding: 15px;
+    height: auto;
+    min-height: 480px; /* Mobile da kichikroq balandlik */
+  }
+
+  .course-content {
+    min-height: 250px; /* Mobile da kichikroq content balandligi */
+  }
+}
+@media screen and (max-width: 415px) {
+  .course-card {
+    padding: 10px 10px;
+    width: 280px;
+  }
+  .course-card > h1 {
+    font-size: 20px;
+  }
+}

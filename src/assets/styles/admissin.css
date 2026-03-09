@@ -1,0 +1,140 @@
+.admissin{
+    width: 100%;
+    height: auto;
+    margin: 150px 0;
+    display: flex;
+    justify-content: center;
+}
+.admissin3-card{
+    width: 100%;
+    height: auto;
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin: 30px 0;
+    border-radius: 4px;
+}
+.admissin3-card a{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+.programma{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 150px 0;
+    row-gap: 50px;
+}
+.prog-card{
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    color: #0f321d;
+    display: flex;
+    border: none;
+    border-radius: 12px;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+.prog-card1{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    border: none;
+    border-radius: 12px;
+    padding: 20px 30px;
+    align-items: start;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.prog-card1 span{
+    color: #0f321d;
+}
+.programma-content{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 20px; */
+}
+.programma-content h1, span{
+    color: #0f321d;
+}
+.programma img{
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.admissin2{
+    width: 100%;
+    height: auto;
+    margin: 150px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+@media screen and (max-width: 1220px) {
+    .admissin img{
+        width: 800px;
+        height: 500px;
+    }
+    .admissin2 img{
+        width: 800px;
+        height: 500px;
+    }
+}
+@media screen and (max-width: 815px) {
+    .admissin img{
+        width: 600px;
+        height: 400px;
+    }
+    .admissin2 img{
+        width: 600px;
+        height: 400px;
+    }
+    .prog-card{
+        flex-direction: column;
+        height: auto;
+        padding: 30px 0;
+        row-gap: 50px;justify-content: center;
+    }
+
+}
+@media screen and (max-width: 621px) {
+    .admissin img{
+        width: 450px;
+        height: 300px;
+    }
+    .admissin2 img{
+        width: 450px;
+        height: 300px;
+    }
+}
+@media screen and (max-width: 465px) {
+    .admissin img{
+        width: 90%;
+        height: 220px;
+    }
+    .admissin{
+        margin: 80px 0;
+    }
+
+    .admissin2 img{
+        width: 90%;
+        height: 220px;
+    }
+    .admissin2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 80px 0;
+    }
+}
+
