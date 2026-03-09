@@ -15,6 +15,8 @@ function About() {
                 src="/images/online-test 1.png"
                 alt=""
               />
+
+              
             </span>
             <div className="card-content">
               <h1>{t("banner1")}</h1>
